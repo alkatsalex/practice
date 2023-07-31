@@ -6,6 +6,7 @@ img {
 }
 
 .btn {
+   margin-bottom: 20px;
 margin-right: 24px;
     cursor: pointer;
     width: 45px;
@@ -17,6 +18,8 @@ box-shadow: 4px 4px 10px rgba(119, 93, 93, 0.5), -3px -3px 10px #FFD5D5;
 transition-duration: 500ms;
 
 }
+
+
 
 .btn:hover .btn:active {
     box-shadow: 4px 4px 10px rgba(119, 93, 93, 0.5), -3px -3px 10px #FFD5D5, inset -3px -3px 10px rgba(255, 212, 212, 0.5), inset 3px 3px 10px rgba(119, 93, 93, 0.5);
@@ -47,7 +50,7 @@ line-height: 15px;
 }
 
 .text {
-    display: block;
+    
     justify-content: center;
     align-items: center;
     padding-top: 3px;

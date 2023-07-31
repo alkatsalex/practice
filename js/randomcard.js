@@ -7,6 +7,7 @@ const btnDiscrement = document.querySelector(".js-discrement")
 const inputValue = document.querySelector(".js-input-value")
 const btnCreate = document.querySelector('.js-create')
 const block = document.querySelector('.js-block')
+const btnDelete = document.querySelector('.js-delete')
 
 const counter = {
   value: 0,
@@ -18,22 +19,15 @@ const counter = {
     this.value +=1
   }
 }
-
 inputValue.textContent = counter.value
-
 const decrementValue = () => {
   counter.decrement()
   inputValue.textContent = counter.value
 }
-
 const incrementValue = () => {
   counter.increment()
   inputValue.textContent = counter.value
 }
-
-
-
-
 btnIncrement.addEventListener('click', incrementValue)
 btnDiscrement.addEventListener('click', decrementValue)
 
@@ -45,14 +39,18 @@ return markup
 
     }
 const makeCard = () => {
+  block.innerHTML = ''
     block.insertAdjacentHTML('beforeend', makeMarkupCard(cards[counter.value]))
-}
-    
-//    block.insertAdjacentHTML('beforeend', makeMarkupCard(cards[counter.value]))
+}  
 
+//    block.insertAdjacentHTML('beforeend', makeMarkupCard(cards[counter.value]))
 
 btnCreate.addEventListener('click', makeCard)
 
 
-console.log(123);
+const daleteMarkup = () => {
+  block.innerHTML = ''
+}
 
+
+btnDelete.addEventListener('click', daleteMarkup)
