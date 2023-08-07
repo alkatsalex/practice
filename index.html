@@ -10,6 +10,9 @@
 </head>
 
 <body>
+
+  
+
     <button class="btn  js-increment " type="button"><div class="round"><span class="text">+</span></div></button>
     <button class="btn js-discrement" type="button"><div class="round "><span class="text">-</span></div></button>
 
@@ -18,9 +21,27 @@
     <button class="btn js-delete" type="button"><div class="round "><span class="text">🍅</span></div></button>
     <div class="js-block"></div>
 
+    <button class="btn js-open">open</button>
+
+
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <form class="form" action="">
+                <input class="input" type="text" name="name">
+            
+                <label class="agreement">
+                    <input type="checkbox">
+                <span >погоджуюся</span>
+                </label>
+            
+            <button class="btn-regist">Відправити</button>
+            </form>
+           </div> 
+    </div>
 
     <script src="js/index.js"></script>
     <script src="js/randomcard.js" type="module"></script>
+    <script src="js/modalWindow.js"></script>
 </body>
 
 </html>
